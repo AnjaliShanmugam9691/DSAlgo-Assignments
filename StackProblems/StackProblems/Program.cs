@@ -19,6 +19,31 @@ namespace StackProblems
             string s = "(a(b(c)d)";
             string resultStr = MinimumRemoveToMakeValidParantheses(s);
             Console.WriteLine(resultStr);
+
+            //Assignmet 2 - Redundant Braces
+            string rb = "((a+b))";
+            CheckRedundantBraces crb = new CheckRedundantBraces();
+            bool rbResult = crb.CheckRedundancy(rb);
+            Console.WriteLine(rbResult);
+            string rb2 = "(a+(a+b))";            
+            bool rbResult2 = crb.CheckRedundancy(rb2);
+            Console.WriteLine(rbResult2);
+
+            //Assignment 4 - Simplify Directory Path
+            string sdp = "/home/";                                    //output -> /home
+            SimplifyDirectoryPath sp = new SimplifyDirectoryPath();
+            string dirPathres = sp.SimplifyDirPath(sdp);
+            Console.WriteLine(dirPathres);
+
+            string sdp2 = "/a/./b/../../c/";                          //output -> /c
+            string dirPathres2 = sp.SimplifyDirPath(sdp2);
+            Console.WriteLine(dirPathres2);
+        
+
+            //Assignment 5 - Basic Calculator
+
+            //Assignment 6 - Balanced Parantheses
+
         }
 
         //Assignement 0 - Delete Consecutive Words
