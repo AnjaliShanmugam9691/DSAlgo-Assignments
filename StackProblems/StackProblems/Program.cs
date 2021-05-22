@@ -81,6 +81,16 @@ namespace StackProblems
             int bpres2 = bal.BalanceParanthese(bp2);
             Console.WriteLine(bpres2);
 
+            //Assignment 7 - Balanced Parantheses
+            int[] mdArr = { 2, 1, 8 };                      //output -> 1
+            MaximumDifference md = new MaximumDifference();
+            int mdres = md.MaximumDiffBetweenLeftRightSmallest(mdArr);
+            Console.WriteLine(mdres);
+
+            int[] mdArr2 = { 2, 4, 8, 7, 7, 9, 3 };                //output -> 4
+            int mdres2 = md.MaximumDiffBetweenLeftRightSmallest(mdArr2);
+            Console.WriteLine(mdres2);
+
         }
 
         //Assignement 0 - Delete Consecutive Words
