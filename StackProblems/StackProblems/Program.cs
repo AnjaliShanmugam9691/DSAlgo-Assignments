@@ -29,6 +29,20 @@ namespace StackProblems
             bool rbResult2 = crb.CheckRedundancy(rb2);
             Console.WriteLine(rbResult2);
 
+            //Assignment 3 - Decode String
+            string ds1 = "3[a]2[bc]";                         //output -> aaabcbc
+            DecodeString dec = new DecodeString();
+            string dsres = dec.DecodingString(ds1);
+            Console.WriteLine(dsres);
+
+            string ds2 = "3[a2[c]]";                          //output -> accaccacc
+            string dsres2 = dec.DecodingString(ds2);
+            Console.WriteLine(dsres2);
+
+            string ds3 = "100[leetcode]";                          //output -> accaccacc
+            string dsres3 = dec.DecodingString(ds3);
+            Console.WriteLine(dsres3);
+
             //Assignment 4 - Simplify Directory Path
             string sdp = "/home/";                                    //output -> /home
             SimplifyDirectoryPath sp = new SimplifyDirectoryPath();
@@ -38,11 +52,34 @@ namespace StackProblems
             string sdp2 = "/a/./b/../../c/";                          //output -> /c
             string dirPathres2 = sp.SimplifyDirPath(sdp2);
             Console.WriteLine(dirPathres2);
-        
 
             //Assignment 5 - Basic Calculator
+            string bc1 = "(1+(4+5+2)-3+(6+8)";               //output -> 23
+            BasicCalculator cal = new BasicCalculator();
+            int bcres1 = cal.BasicCalculatorFn(bc1);
+            Console.WriteLine(bcres1);
+
+            string bc2 = "2-1 + 2";                          //output -> 3
+            int bcres2 = cal.BasicCalculatorFn(bc2);
+            Console.WriteLine(bcres2);
+
+            string bc3 = "123456";                          //output -> 123456
+            int bcres3 = cal.BasicCalculatorFn(bc3);
+            Console.WriteLine(bcres3);
+
+            string bc4 = "1 - (+1+1)";                      //output -> -1
+            int bcres4 = cal.BasicCalculatorFn(bc4);
+            Console.WriteLine(bcres4);
 
             //Assignment 6 - Balanced Parantheses
+            string bp1 = "(()())";                          //output -> 1
+            BalancedParantheses bal = new BalancedParantheses();
+            int bpres1 = bal.BalanceParanthese(bp1);
+            Console.WriteLine(bpres1);
+
+            string bp2 = "))((";                          //output -> 0
+            int bpres2 = bal.BalanceParanthese(bp2);
+            Console.WriteLine(bpres2);
 
         }
 

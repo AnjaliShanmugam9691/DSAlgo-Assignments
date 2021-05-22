@@ -43,7 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BalancedParantheses.cs" />
+    <Compile Include="BasicCalculator.cs" />
     <Compile Include="CheckRedundantBraces.cs" />
+    <Compile Include="DecodeString.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimplifyDirectoryPath.cs" />
