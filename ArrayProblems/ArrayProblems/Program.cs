@@ -21,6 +21,12 @@ namespace ArrayProblems
             Sort0s1s2s sort = new Sort0s1s2s();
             var sortOP = sort.SortList(sortIP);
             Console.WriteLine(sortOP);
+
+            //Product Of Array Except Self
+            int[] proarr = new int[] { 1, 2, 3, 4 };
+            ProductOfArrayExceptSelf p = new ProductOfArrayExceptSelf();
+            var proOut = p.ProductArrayExceptSelf(proarr);
+            Console.WriteLine(proOut);
         }
     }
 }
