@@ -240,3 +240,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/ArrayProblems/ArrayProblems/Properties
+/ArrayProblems/ArrayProblems/App.config
+/ArrayProblems/ArrayProblems/ArrayProblems.csproj
+/ArrayProblems/ArrayProblems.sln
