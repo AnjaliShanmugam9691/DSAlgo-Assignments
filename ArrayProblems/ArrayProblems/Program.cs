@@ -27,6 +27,18 @@ namespace ArrayProblems
             ProductOfArrayExceptSelf p = new ProductOfArrayExceptSelf();
             var proOut = p.ProductArrayExceptSelf(proarr);
             Console.WriteLine(proOut);
+
+            //Task Scheduler
+            char[] tsArr = new char[] { 'A', 'A', 'A', 'B', 'B', 'B' };
+            TaskScheduler ts = new TaskScheduler();
+            var tsOutput = ts.TaskSchedulerFn(tsArr, 2);
+            Console.WriteLine(tsOutput);
+
+            //2 SUM
+            int[] twoSumArr = new int[] { 2,7,11,15 };
+            _2SUM twoSum = new _2SUM();
+            var twoSumOP = twoSum.TwoSum(twoSumArr, 9);
+            Console.WriteLine(twoSumOP);
         }
     }
 }
