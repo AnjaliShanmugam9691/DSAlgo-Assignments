@@ -39,6 +39,18 @@ namespace ArrayProblems
             _2SUM twoSum = new _2SUM();
             var twoSumOP = twoSum.TwoSum(twoSumArr, 9);
             Console.WriteLine(twoSumOP);
+
+            //Subarray Sum Equals to K
+            int[] subArray = new int[] { 1, 2, 3 };
+            SubarraySumEqualsK sub = new SubarraySumEqualsK();
+            var sumOP = sub.SubArraySumEqualsToKFn(subArray, 3);
+            Console.WriteLine(sumOP);
+
+            //Search in Rotated Sorted Array
+            int[] searchIp = new int[] { 4, 5, 6, 7, 0, 1, 2 };
+            SearchInRotatedSortedArray search = new SearchInRotatedSortedArray();
+            var searchOp = search.Search(searchIp, 0);
+            Console.WriteLine(searchOp);
         }
     }
 }
