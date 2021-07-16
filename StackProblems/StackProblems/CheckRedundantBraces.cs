@@ -25,6 +25,11 @@ namespace StackProblems
                     {
                         return true;     // redundant
                     }
+                    //this below lines will work for (a+(b+c+c)) case
+                    while(st.Peek() != '(')
+                    {
+                        st.Pop();
+                    }
                     st.Pop();
                 }
             }
